@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart IP - Route Validator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <h1>🕵️ Smart IP Checker</h1>
+
+    <div class="container" id="routes">
+      <h2 class="title">Route Validator ✅</h2>
+
+      <div class="checker-card">
+        <input
+          id="routesInput"
+          class="input-field"
+          type="text"
+          placeholder="Enter up to 5 IPs/CIDRs separated by commas"
+        />
+
+        <div class="button-row">
+          <button class="btn check-btn">Check</button>
+          <button class="btn clear-btn" onclick="clearRoutes()">Clear</button>
+        </div>
+
+        <div id="routesSpinner" class="spinner hidden"></div>
+        <div id="routesResults" class="results hidden"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Smart IP Tool — Route Validator</p>
+    </footer>
+
+    <script src="scripts/routeValidate.js"></script>
+    <script src="scripts/clear.js"></script>
+    <script src="scripts/spinner.js"></script>
+  </body>
+</html>
